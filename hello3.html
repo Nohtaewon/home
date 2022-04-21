@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello3.html</title>
+</head>
+<body>
+    <h1>javascript 테스트</h1>
+    <button onclick="change()">바꾸기</button>
+    <button onclick="increase()">10 증가시키기</button>
+    <script>
+        //a라는 이름의 기억공간을 만들어서 10이라는 숫자를 대입해라!
+        let a=10;
+        
+        /*
+            어떤 값을 기억 할 수 있는 이름지어진 기억공간 => 변수
+        */
+
+        //바꾸기 버튼을 눌렀을 때 이미 만들어진 a라는 변수에 999를 대입해보세요
+        function change(){
+            a=999;//함수 안에서 함수 바깥 영역에서 만들어진 변수 참조가능!
+        }
+        function increase(){
+            a=a+10;
+
+        }
+
+    </script>
+</body>
+</html>

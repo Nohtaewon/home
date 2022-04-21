@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step03_ifexample.html</title>
+</head>
+<body>
+    <input type="text" id="height" placeholder="당신의 키를 입력하세요">
+    <button  onclick="clicked()">확인하기</button>
+    <p id="result"></p>
+    <script>
+        let clicked=function(){
+        let h=Number(document.querySelector("#height").value);
+        if(h>=180){
+            
+            document.querySelector("#result").innerText="키가 크군요";
+            
+        }
+        
+        else{
+            document.querySelector("#result").innerText="루저";
+        }
+        };
+       
+        
+    </script>
+</body>
+</html>

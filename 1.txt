@@ -1,0 +1,217 @@
+[javascript]
+-웹브라우저가 해석하는 문자열 형식이다.
+-프로그래밍 언어중에 하나이다.
+-웹브라우저의 동작을 페이지 로딩 시점에 프로그래머가 의도하는데로 준비시킬수있다.
+어떤 동작을 하다보면 어떠한 data(숫자 or 문자열 or ) 를 어디엔가 기억 시켜놓고
+여러번 활용해야 할때도 있다.
+
+변수명을 지을 때 변수 안에 들어 있는 값이 
+어떤 값인지 대략 예측이 가능하도록 짓는게 일반적이다.
+
+여러값을 하나의 묶음으로 관리하고자 할 때 사용하는
+data type 이 object type 이다.
+
+object type 은 중괄호 열고 닫고 해서 만들 수 있다.{}
+
+중괄호 안에 작성하는 문법은? 
+
+key1 : value1, key2 : value2, key3 : value3, .......
+
+let a = mem1.num; 불러온것
+mem1.num=2; 덮어쓴것
+alert(mem1.num); 불러온것
+
+같다? == 
+------------------------------------------------------------------
+나는 아이폰 13 을 사서 10번 사물함에 넣어두고
+10번 사물함 키를 들고다니다가 
+전화기가 필요할때마다 10번 사물함을 찾아가서 전화를 사용한다
+
+친구는 아이폰 13 을 사서 20번 사물함에 넣어두고
+20번 사물함 키를 들고다니다가 
+전화기가 필요할때마다 20번 사물함을 찾아가서 전화를 사용한다
+
+중괄호 쓸때마다 새로운 오브젝트 등장
+
+let mem1={num:1};
+let mem2={num:1};
+--------------------------------------------------------------------
+원숭이는 아이폰 13 을 사서 30번 사물함에 넣어두고
+30번 사물함 키를 들고다닌다
+또한 주뎅이에게도 같은 사물함 키를 복사해주었다.
+
+let mem1={num:1};
+let mem2=mem1;
+
+heap영역은 사물함 영역이다.
+
+
+-------------------------------------------------------------------
+
+number, string, boolean 값은 변수에 실제 그 값이 들어간다 라고 
+생각을 하는게 좋다 나머지는 사물함 키를 들고다닌다
+
+???.xxx -> object type 오브젝트
+???( ) -> function type 함수
+???[ ]-> array type 배열
+웹브라우저에서 쓰게해주는 bulit in 함수
+document.querySelector( )
+
+let document={querySelector : f};
+
+document.querySelectorAll( )[0].innerText
+
+순서가 중요치 않은 여러가지 데이터를 관리할 때 object를 사용한다
+
+순서가 중요한 여러개의 데이터를 관리할 일도 있을까?
+
+-어떤 카페 게시판 페이지
+ 게시글이 아무거나 랜덤으로 목록이 나오나요?
+
+obj 범주(안)에 array가 포함되어있다
+
+실행의 흐름 스레드
+
+
+
+
+회원 목록, 글 목록, 상품 목록...
+
+
+number, string, boolean type 은 
+값을 말로 표현할 수 있다.
+
+object, array 등은 
+값을 말로 표현 할 수 없다.
+
+배열안에 오브젝트의 참조값이 들어있는것
+index를 사용해서 오브젝트를 선택하고 오브젝트의 값을 불러오는것
+
+number type: 산술연산이 가능한 데이터
+string type:  문자 표현이 가능한 데이터
+boolean type: 참, 거짓 표현이 가능한 데이터
+objext type: 순서가 중요치 않은 여러type 데이터를 하나의 묶음으로 관리 가능한 데이터
+array type: 순서가 중요한 여러개의 데이터를 하나의 묶음으로 관리가능한 데이터
+function type:특정 시점에 일괄 실행할 javascript를 여러줄 모아 놓을 수 있다. function도 사물함에 만들어짐heap
+
+let gura=alert; 참조
+gura
+gura( ) 콜
+
+let d=pushMonkey
+
+d
+
+f( ){
+	console.log(" " );
+}
+
+d( );
+
+undefined
+
+[함수]
+
+함수를 호출(call) 한 그 위치는 반드시 어떤 값으로 바뀐다.
+
+함수를 호출하는 목적이 때로는 어떤 값을 호출한 그 위치로 가지고 오기 위해서 
+호출하는 경우도 있다.
+
+함수가 종료되는 것을 함수가 return 된다 라고도 한다.
+
+confirm("삭제할까요?") -> 예 -> true
+confirm("삭제할까요?") ->아니오-> false
+let a = confirm("삭제할까요?")-> undefined
+
+
+은행 자동화 기기
+1. 어떤계좌에 송금하는 작업
+
+2. 내 계좌에서 돈을 인출하는 작업
+getNumber( ) 버린거
+let result=getNumber( ); 999담아둔것 변수에 리턴값을 넣는것/ 호출 
+let result2=getNumber; 함수를 넣는것 /참조
+
+getData().num // obj을 리턴하기 때문에 가능
+getData().name
+getData().sing
+getData().sing()
+
+querySelector 함수는 조건에 부합하는 문서객체를 최초 1개만 찾아오는 거 첫번재 요소
+querySelectorAll 함수는 조건에 부합하는 문서객체를 모두 찾아서 배열에 담아오는 거
+
+document.querySelector("p")
+요소명ㅇ이 p인 문서객체를 한개찾아서 이 위치로 리턴
+
+document.querySelector("#one")
+id가 one인 요소를 하나 찾아서 이 위치로 리턴/ id를 활용한 선택자가 selector로 찾기 적절 그외는 selectorall
+
+document.querySelector(".my-class")
+class가 my-class인 요소를 하나 찾아서 이 위치로 리턴
+
+document.querySelectorAll("p")
+document.querySelectorAll("p")[0] 첫번째 p요소를 제어하고싶다.
+
+document.querySelectorAll(".my-class")
+
+프로그래밍을 하다보면 특정 코드 블럭을 원하는 횟수만큼 반복수행을 해야 할때가 있다.
+
+document built object
+
+배열과 반복문 
+
+for(let i=0; <- 제어 변수 관례상 i, j, k i라는 변수 for문 안에서만 쓸 수 있음
+i<5; <- 조건, 비교연산자 true or false, 조건이 false가 되면 빠져나옴, 반복 횟수 결정
+i++){} <- 1씩 증가
+
+제어 변수를 배열의 방번호로 쓰기 적합 그래서 상당히 많이 활용한다.
+
+input 요소는 innerText가 존재하지 않는다. .value 가 있다. 
+좌측에서 innerText든 value든 참조를 하면 수정할  수 있다.
+document.querySelector("#one").innerText="xxx";
+document.querySelector("#two").value="xxx";
+
+.addEventlistener(string type, function type)
+
+document.querySelector("#myBtn").addEventListener("click", function(){
+            alert("버튼을 눌렀네요?");
+        });
+
+click, mousedown, mousemove, mouseover, focus, submit, blur
+
+function( )<- ( ) 안에 오브젝트{}가 전달됨 함수에 전달되는 인자
+받을준비
+
+offset div 내에서의 좌표
+page 웹브라우저내에서의 좌표
+screen 스크린내에서의 좌표
+
+-은행(useFunc)에서 계약서에 사인을 할일이 있는데 내가 직접 못가고 동생을
+ 대리인으로 보낸다. 
+나는 동생(function(e))에게 당부한다.
+"은행에 들어가면 지점장f(obj)이 너를 찾을 거야 그리고 동시에 계약서({name:"김구라",x, y})를
+ 너의 손에 줄거야! 그럼 그 계약서 마지막 페이지에 내 사인을 하고와"
+
+형(console.log)
+e(동생의 왼손,오른손, 발, ....)
+
+confirm("") 은 확인과 취소가 있는 알림창이 뜸
+
+value 읽어오면 무조건 string
+그래서 Number() 함수로 number type 으로 만들어줌
+
+동기 처리 방식
+
+스타벅스에 갔다
+카운터에 가서 메뉴를 주문하고
+내 메뉴가 나올 때까지 카운터에서 계속 기다린다
+메뉴가 나오면 메뉴를 받아 들고 카운터에서 나온다.
+
+비동기 처리 방식
+
+스타벅스에 갔다(여기는 직원이 한명이다, 직원 한명이 주문도 받고, 
+메뉴도 준비하고, 등등 모든 일을 처리하고 있다.)
+카운터에 가서 메뉴를 주문하고 진동벨을 받아들고
+카운터에서 나온다
+갑자기 진상 손님이 직원과 싸우고 있다.(동기처리) alert
+메뉴가 다 준비 되었다는 진동벨이 울리면 메뉴를 받아온다.

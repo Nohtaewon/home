@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello2.html</title>
+
+
+</head>
+<body>
+    <button onclick="move()" >오른쪽으로 움직이기</button>
+    <br>
+    <img id="kimImg" src="images/kim1.png" >
+    <br>
+    <img id=rabbitImg src="images/rabbit_1.png" ><!--이미지2개를 div로 묶어서 한번에 보내는 방법도 있다-->
+    <script>
+        function move(){
+            document.querySelector("#kimImg").style.marginLeft="100px";//kimImg 아이디를 갖는 요소를 선택
+            document.querySelector("#rabbitImg").style.marginLeft="100px";
+        }
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+button onmousemove 함수()  함수 change, increase, move, send
+        onclick 함수
+script 안에 function move(){ document.querySelector(#id지정한것).style.marginLeft="px"}
+                                                                    backgroundColor, width, height, ...
+img 에 id 지정 src 이미지 장소
+순서가 없는 데이터 object 
+let a={num:x, name:"", addr:""};
+순서가 있는 데이터 array
+let a=["", "", "",...]; 배열에 아이템추가 a.push(""); 
+배열에 오브젝트도 저장가능
+let a=[{}, {}, {}];
+let a=function(){};      function a(){};   변수를 선언만 하고 값을 넣지 않으면 undefined
+input type 이면 .value

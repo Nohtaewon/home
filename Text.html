@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #kimImg{
+            transition: margin-left 12.3s ease-out;
+            
+        }
+        #rabbitImg{
+            transition: margin-left 11.2s ease-out;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <button onclick="start()" >시작</button>
+    <br>
+    <img id="kimImg" src="images/kim1.png" >
+    <br>
+    <img id=rabbitImg src="images/rabbit_1.png" >
+    
+    <script>
+        function start(){
+            
+            document.querySelector("#kimImg").style.marginLeft="900px";
+            document.querySelector("#rabbitImg").style.marginLeft="900px";
+        }
+
+    </script>
+
+    
+</body>
+</html>

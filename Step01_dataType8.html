@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step01_dataType8.html</title>
+</head>
+<body>
+    <script>
+        let getData=function(){
+            let obj={
+                num:1,
+                name:"김구라",
+                sing:function(){
+                    alert("노래해요!");//undefined
+                }
+                
+            };
+            return obj;
+        };
+        let a=getData();//a에는 object type의 참조값이 들어있다.
+        let b=getData();//b에도 object type의 참조값이 들어있다.
+
+        let result=a==b;//false
+    </script>
+</body>
+</html>
